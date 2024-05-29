@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #FFB6C1, #a2185d);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 400px;  /* Increased image width */
+    height: auto;  /* Maintain aspect ratio */
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    font-size: 72px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-box {
+    margin: 10px 0;
+}
+
+button {
+    font-size: 24px;
+    padding: 12px 24px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #FF8C00, #FF4500);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #FF4500, #FF8C00);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+.laps {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.lap-time {
+    font-size: 24px;
+    color: #000;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
